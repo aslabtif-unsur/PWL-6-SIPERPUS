@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('year');
             $table->string('publisher');
             $table->string('city');
-            $table->integer('quantity');
+            // $table->integer('quantity');
             $table->string('cover')->nullable();
             $table->unsignedBigInteger('bookshelf_id');
             $table->foreign('bookshelf_id')->references('id')->on('bookshelfs');
